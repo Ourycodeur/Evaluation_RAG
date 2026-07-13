@@ -1,4 +1,4 @@
-# utils/rag_agent.py
+# utils/agent_router.py
 """
 Agent RAG unifié (Étape 2) — utilisé À LA FOIS par l'application Streamlit
 (MistralChat.py) ET par l'évaluation Ragas (rag_engine.py), pour garantir que
@@ -27,7 +27,7 @@ from dataclasses import dataclass, field
 # MistralChat.py (l'agent ne doit jamais être instancié avant que .env soit chargé).
 from utils.config import MISTRAL_API_KEY, MODEL_NAME, STATS_DATABASE_URL
 from utils.vector_store import VectorStoreManager
-from sql_tool import run_sql_tool
+from utils.tool_sql import run_sql_tool
 
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.providers.openai import OpenAIProvider
@@ -169,4 +169,4 @@ def query_nba_stats(ctx: RunContext[RagAgentDeps], question: str) -> str:
         logging.warning(f"[tool:query_nba_stats] échec: {result['error']}")
         return f"Erreur lors de l'interrogation des statistiques : {result['error']}"
 
-    return f"Requête SQL exécutée : {result['sql']}\nRésultat : {result['result']}"
+    return f"Requête SQL exécutée : {result['sql']}\nRésultat : {result['result']}" 
