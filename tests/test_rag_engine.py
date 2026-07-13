@@ -19,9 +19,12 @@ import faiss
 from unittest.mock import MagicMock
 from pathlib import Path
 import sys
-from utils.vector_store import VectorStoreManager
+
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT_DIR))
+
+from utils.vector_store import VectorStoreManager
+
 
 
 # ============================================================
