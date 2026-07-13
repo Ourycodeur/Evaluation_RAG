@@ -9,6 +9,7 @@ ENV/
 
 # Fichiers générés
 __pycache__/
+__init__/
 *.py[cod]
 *$py.class
 *.so
