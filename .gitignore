@@ -9,7 +9,6 @@ ENV/
 
 # Fichiers générés
 __pycache__/
-*__init__.py
 *.py[cod]
 *$py.class
 *.so
@@ -29,6 +28,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+__init__*
+
 
 # Fichiers de logs
 *.log

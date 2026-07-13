@@ -18,3 +18,4 @@ ragas
 datasets
 langchain-mistralai
 pydantic-ai
+pytest
