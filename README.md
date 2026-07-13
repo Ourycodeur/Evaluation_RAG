@@ -98,7 +98,10 @@ Ce script va :
 ```bash
 streamlit run MistralChat.py
 ```
-
+### Lancer l'app contenant le tool
+```bash
+streamlit run MistralChats.py
+```
 L'application sera accessible à l'adresse http://localhost:8501 dans votre navigateur.
 
 
@@ -111,7 +114,7 @@ Gère l'index vectoriel FAISS et la recherche sémantique :
 - Génération des embeddings avec Mistral
 - Création et interrogation de l'index FAISS
 
-### `utils/query_classifier.py`
+### `utils/tool_sql.py`
 
 Détermine si une requête nécessite une recherche RAG :
 - Analyse des mots-clés
