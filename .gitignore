@@ -3,6 +3,8 @@ venv/
 env/
 ENV/
 .venv/
+__init__.py
+
 
 # Fichiers de configuration contenant des informations sensibles
 .env
@@ -28,7 +30,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-__init__*
+
 
 
 # Fichiers de logs
