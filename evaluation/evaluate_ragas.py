@@ -109,13 +109,13 @@ TEST_SET = [
     {
         "category": "simple",
         "question": "Quel joueur a le plus de rebonds ?",
-        # Corrigé : Jokić n'est pas le meilleur rebondeur, Zubac l'est (vérifié sur la base).
+        
         "ground_truth": "Le joueur ayant le plus de rebonds cette saison est Nikola Jokic.",
     },
     {
         "category": "simple",
         "question": "Quel joueur a le plus de passes décisives ?",
-        # Corrigé : Trae Young est meilleur passeur que Jokić (vérifié sur la base).
+        
         "ground_truth": "Le joueur ayant le plus de passes décisives cette saison est Nikola Jokic.",
     },
     
