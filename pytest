@@ -1,0 +1,4 @@
+[pytest]
+markers =
+    integration: tests d'intégration réels (vraie API Mistral + vrai index sur disque). Exclus par défaut, lancer avec: pytest -m integration
+addopts = -m "not integration"
